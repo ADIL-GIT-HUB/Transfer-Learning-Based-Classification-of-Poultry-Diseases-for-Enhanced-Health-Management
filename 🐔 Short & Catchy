@@ -1,0 +1,48 @@
+✅ Project Title: Transfer Learning-Based Classification of Poultry Diseases for Enhanced Health Management
+
+🤖 AI-Driven Objective:
+Supports early and accurate diagnosis of common poultry diseases using deep learning.
+
+🧠 Model Used:
+Utilizes a pre-trained MobileNetV2 architecture with transfer learning.
+
+📷 Classifies Poultry Images Into:
+
+Healthy
+
+Newcastle Disease
+
+Salmonella
+
+Coccidiosis
+
+💻 Web App with Streamlit:
+
+Allows users to upload poultry images.
+
+Displays real-time predictions and confidence scores.
+
+Designed for farmers, poultry workers, and veterinary professionals.
+
+🏋️ Training Highlights:
+
+Uses a curated image dataset with augmentation.
+
+Optimized using TensorFlow and Keras frameworks.
+
+⚙️ Key Features:
+
+Lightweight and fast model.
+
+Simple and intuitive UI.
+
+Non-invasive and image-based analysis.
+
+🌍 Impact:
+
+Promotes accessible and affordable disease detection.
+
+Improves poultry farm productivity and health management.
+
+Contributes to public health by monitoring zoonotic diseases.
+
