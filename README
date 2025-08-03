@@ -1,0 +1,104 @@
+🐔 Project Title:
+Transfer Learning-Based Classification of Poultry Diseases for Enhanced Health Management
+
+🎯 Objective
+To develop an efficient image classification system using transfer learning that detects poultry diseases based on images of poultry droppings or visible symptoms.
+✅ The goal is to help farmers identify diseases early and manage flock health effectively, even in rural areas.
+
+❗ Problem Statement
+Poultry diseases like Newcastle Disease, Coccidiosis, and Salmonella cause significant economic losses in the poultry industry.
+
+In rural or resource-limited settings, veterinary support is not always available. A fast, automated image classification system can provide immediate diagnosis, enabling better disease control and reduced mortality.
+
+🛠️ Technologies Used
+🐍 Python
+
+🤖 TensorFlow / Keras (Deep Learning Framework)
+
+🌐 Streamlit (Web Interface)
+
+📱 MobileNetV2 (Pre-trained CNN for Transfer Learning)
+
+🖼️ Pillow (PIL)
+
+🔢 NumPy
+
+📁 Dataset Structure
+kotlin
+Copy
+Edit
+data/
+├── train/
+│   ├── Healthy/
+│   ├── Newcastle Disease/
+│   ├── Coccidiosis/
+│   └── Salmonella/
+Images are stored in class-labeled folders.
+
+Dataset is split into training and validation using validation_split.
+
+🧠 Model Architecture
+Base Model: MobileNetV2 (pre-trained on ImageNet, include_top=False)
+
+🔧 Custom Layers Added:
+
+GlobalAveragePooling2D
+
+Dense(64, activation='relu')
+
+Dropout(0.3)
+
+Dense(num_classes, activation='softmax') ← Multi-class output
+
+⚙️ Training Setup
+Batch Size: 16
+
+Epochs: 3
+
+Steps per Epoch: 50
+
+Validation Steps: 20
+
+Optimizer: Adam
+
+Loss Function: Categorical Crossentropy
+
+💡 Fast training time (under 10 minutes) for demo/testing
+
+🖥️ Streamlit Web Application
+The Streamlit app provides a user-friendly interface to:
+
+📤 Upload a poultry image (droppings/symptoms)
+
+🖼️ Preview the uploaded image
+
+🧠 Receive model prediction
+
+📈 View confidence score
+
+✨ Features
+🚀 Fast Predictions
+
+💾 Model Caching for performance
+
+🪶 Lightweight UI
+
+🧾 Output: Disease Name + Confidence %
+
+🧪 Prediction Output Example:
+Prediction: Newcastle Disease
+Confidence: 96.85%
+
+🔮 Future Enhancements
+🔁 Expand dataset size for improved accuracy
+
+🎥 Add support for video-based detection
+
+📲 Deploy to mobile using Streamlit Cloud or TensorFlow Lite (TFLite)
+
+💊 Provide treatment suggestions based on prediction
+
+✅ Conclusion
+This system proves how Transfer Learning combined with Streamlit can power a low-cost, fast-response diagnostic tool. It’s especially impactful for rural and underserved farming communities.
+
+With just a photo, poultry farmers can gain immediate insights and take early action to protect their flocks.
