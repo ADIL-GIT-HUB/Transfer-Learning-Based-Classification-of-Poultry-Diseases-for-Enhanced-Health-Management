@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+env/
+model/
+data/
+*.h5
+*.log
+.DS_Store
+.streamlit/
+.vscode/
